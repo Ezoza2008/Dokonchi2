@@ -1,0 +1,297 @@
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        
+        * { 
+            font-family: "Merriweather", serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* ==================== GRADIENT & COLOR STYLES ==================== */
+        .gradient-orange {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+        }
+
+        .text-gradient-orange {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ==================== NAVIGATION STYLES ==================== */
+        .glass-nav {
+            background: rgba(255, 107, 53, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link .orange{
+            color: #e55a2b;
+        }
+
+        .nav-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* ==================== BUTTON STYLES ==================== */
+        .btn-primary {
+            background: white;
+            transition: all 0.3s ease;
+            color: #ff6b35;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .orange{
+            background: white;
+            padding: 6px 10px;
+            border-radius: 5px;
+            color: #e55a2b;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #ff6b35;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ==================== HERO SECTION WITH ANIMATED BACKGROUND ==================== */
+        .hero-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ff8c42 100%);
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Floating Shapes Animation */
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #faa485, #f0c491);
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #eac395, #f5d3bd);
+            top: 50%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .shape-3 {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #f4d5c2, #fad2c3);
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 4s;
+        }
+
+        .shape-4 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #f5e4bb, #f2d6a7);
+            top: 30%;
+            right: 25%;
+            animation-delay: 6s;
+        }
+
+        .shape-5 {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #ebe0d8, #f3d5bf);
+            bottom: 30%;
+            right: 5%;
+            animation-delay: 8s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            25% {
+                transform: translate(30px, -30px) rotate(90deg) scale(1.1);
+            }
+            50% {
+                transform: translate(-20px, 40px) rotate(180deg) scale(0.9);
+            }
+            75% {
+                transform: translate(40px, 20px) rotate(270deg) scale(1.05);
+            }
+        }
+
+        /* ==================== ANIMATION STYLES ==================== */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ==================== COUNTER ANIMATION ==================== */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ==================== FEATURE CARD STYLES ==================== */
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(255, 107, 53, 0.3);
+        }
+
+        /* ==================== SECTION PADDING ==================== */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+
+        /* ==================== DROPDOWN STYLES ==================== */
+        #languageDropdown {
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ==================== MODAL OVERLAY ==================== */
+        .modal-overlay {
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* ==================== CARD HOVER EFFECTS ==================== */
+        .manufacturer-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .manufacturer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(255, 107, 53, 0.3), 0 10px 10px -5px rgba(255, 107, 53, 0.1);
+        }
+
+        /* ==================== LINE CLAMP ==================== */
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* ==================== SCROLL BAR STYLING ==================== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #e55a2b, #de831a);
+        }
+
+        /* ==================== RESPONSIVE UTILITIES ==================== */
+        @media (max-width: 640px) {
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+            
+            .text-7xl {
+                font-size: 3rem;
+            }
+            
+            .floating-shape {
+                opacity: 0.08;
+            }
+        }

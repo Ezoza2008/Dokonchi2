@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do'konchi - Connecting Businesses Across Borders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Primary Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>B2B Marketplace - Connect Retailers with Distributors | YourPlatformName</title>
+<meta name="title" content="B2B Marketplace - Connect Retailers with Distributors">
+<meta name="description" content="Streamline your supply chain with our B2B marketplace. Connect local retailers directly with distributors, get transparent pricing, and eliminate supply delays. Join thousands of businesses trading smarter.">
+<meta name="keywords" content="B2B marketplace, wholesale distributors, retail suppliers, supply chain management, business trading platform, distributor network, wholesale pricing, retail procurement startup, project">
+<meta name="author" content="E'zoza Baxodirovna, Ibrohim ...">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+
+<!-- Open Graph / Facebook Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/">
+<meta property="og:title" content="B2B Marketplace - Connect Retailers with Distributors">
+<meta property="og:description" content="Streamline your supply chain with our B2B marketplace. Connect local retailers directly with distributors, get transparent pricing, and eliminate supply delays.">
+<meta property="og:image" content="https://ibb.co/spR20Zh8">
+<meta property="og:site_name" content="Dokonchhi">
+<meta property="og:locale" content="uz_Uz">
+
+
+<!-- Additional SEO Tags -->
+<meta name="theme-color" content="#3B82F6">
+<meta name="format-detection" content="telephone=no">
+</head>
+
+<body class="bg-white text-gray-900"> 
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-bold text-white">Do'konchi</h1>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    
+                    <div class="relative">
+                        <button id="languageBtn"
+                            class="flex items-center space-x-2 px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors text-white">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang">EN</span>
+                            <i class="fas fa-chevron-down text-sm"></i>
+                        </button>
+                        <div id="languageDropdown"
+                            class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2">
+                            <button onclick="changeLang('uz')"
+                                class="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors">
+                                <i class="fas fa-flag mr-2"></i>O'zbekcha
+                            </button>
+                            <button onclick="changeLang('ru')"
+                                class="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors">
+                                <i class="fas fa-flag mr-2"></i>Русский
+                            </button>
+                            <button onclick="changeLang('en')"
+                                class="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors">
+                                <i class="fas fa-flag mr-2"></i>English
+                            </button>
+                        </div>
+                    </div>
+                    <button onclick="scrollToJoin()" class="orange">
+                        Join Now
+                    </button>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-orange-500">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-orange-500">About</a>
+                <a href="#features" class="block py-2 text-gray-700 hover:text-orange-500">Features</a>
+                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-orange-500">Testimonials</a>
+                <a href="#team" class="block py-2 text-gray-700 hover:text-orange-500">Team</a>
+                <div class="pt-2 space-y-2">
+                    <button onclick="changeLang('uz')"
+                        class="w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg">O'zbekcha</button>
+                    <button onclick="changeLang('ru')"
+                        class="w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg">Русский</button>
+                    <button onclick="changeLang('en')"
+                        class="w-full text-left px-4 py-2 hover:bg-gray-100 rounded-lg">English</button>
+                </div>
+                <button onclick="scrollToJoin()" class="orange">
+                    Join Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section pt-32 pb-20 section-padding relative overflow-hidden">
+        
+        <div class="absolute inset-0">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                    Connecting Businesses<br />
+                    <span class="text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">Across Borders</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-4 max-w-4xl mx-auto"
+                    style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+                    A global B2B platform that brings together manufacturers, resellers, and entrepreneurs from
+                    Uzbekistan, China, Kazakhstan, Kyrgyzstan, Dubai, and Abu Dhabi.
+                </p>
+                <p class="text-lg text-white mb-12 max-w-3xl mx-auto"
+                    style="opacity: 0.95; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+                    Dokonchi simplifies trade by building trust, streamlining supply chains, and helping businesses grow
+                    through verified partnerships.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToJoin()"
+                        class="btn-primary text-orange-500 px-8 py-4 rounded-lg font-semibold text-lg">
+                        Join Now
+                    </button>
+                    <button onclick="scrollToManufacturers()"
+                        class="btn-secondary px-8 py-4 rounded-lg font-semibold text-lg">
+                        Explore Businesses
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4"> Building a borderless network of trusted
+                    businesses </h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl md:text-6xl font-bold text-gradient-orange counter mb-2" data-target="6">0
+                    </div>
+                    <p class="text-gray-600 font-medium">Countries Connected</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl md:text-6xl font-bold text-gradient-orange counter mb-2" data-target="100">0
+                    </div>
+                    <p class="text-gray-600 font-medium">Verified Sellers</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl md:text-6xl font-bold text-gradient-orange counter mb-2" data-target="180">0
+                    </div>
+                    <p class="text-gray-600 font-medium">Manufacturers Onboarded</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl md:text-6xl font-bold text-gradient-orange counter mb-2" data-target="500">0
+                    </div>
+                    <p class="text-gray-600 font-medium">Business Connections</p>
+                </div>
+            </div>
+            <p class="text-center text-xl text-gray-600 mt-12 font-medium"> Every connection builds a stronger regional
+                economy </p>
+        </div>
+    </section> 
+    <section id="about" class="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4"> Dokonchi was created to solve real
+                    problems<br />faced by entrepreneurs every day </h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12"> 
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4"> <i
+                                class="fas fa-exclamation-triangle text-red-500 text-xl"></i> </div>
+                        <h3 class="text-2xl font-bold text-gray-900">The Challenge</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"> <i class="fas fa-times text-red-500 mt-1 mr-3"></i> <span
+                                class="text-gray-600">Unreliable supplier relationships</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-times text-red-500 mt-1 mr-3"></i> <span
+                                class="text-gray-600">Sudden distributor visits and supply delays</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-times text-red-500 mt-1 mr-3"></i> <span
+                                class="text-gray-600">Lack of transparency in product pricing</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-times text-red-500 mt-1 mr-3"></i> <span
+                                class="text-gray-600">Weak digital infrastructure for regional trade</span> </li>
+                    </ul>
+                </div> 
+                <div class="gradient-orange p-8 rounded-2xl shadow-lg text-white">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4"> <i
+                                class="fas fa-check-circle  text-xl" style="color: rgb(152, 239, 21);"></i> </div>
+                        <h3 class="text-2xl font-bold">Our Solution</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"> <i class="fas fa-check text-white mt-1 mr-3"></i> <span>A verified
+                                B2B ecosystem built on trust</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-check text-white mt-1 mr-3"></i> <span>Instant
+                                access to company profiles and product catalogs</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-check text-white mt-1 mr-3"></i> <span>Seamless
+                                communication between buyers and suppliers</span> </li>
+                        <li class="flex items-start"> <i class="fas fa-check text-white mt-1 mr-3"></i> <span>Smart
+                                tools (coming soon) for financial planning and business tracking</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-2xl font-semibold text-gray-800 mt-12"> Dokonchi bridges the gap between
+                opportunity and organization </p>
+        </div>
+    </section> 
+    <section id="features" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4"> Everything businesses need — in one
+                    platform </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+                <div
+                    class="feature-card bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-100">
+                    <div class="w-16 h-16 gradient-orange rounded-xl flex items-center justify-center mb-6"> <i
+                            class="fas fa-shield-alt text-white text-2xl"></i> </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Verified Company Profiles</h3>
+                    <p class="text-gray-600"> Every seller and manufacturer on Dokonchi is verified, ensuring
+                        trustworthy connections and real opportunities. </p>
+                </div> 
+                <div
+                    class="feature-card bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100">
+                    <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-6"> <i
+                            class="fas fa-globe text-white text-2xl"></i> </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Cross-Border Product Catalogs</h3>
+                    <p class="text-gray-600"> Discover thousands of products, filter by country or category, and connect
+                        directly with producers. </p>
+                </div> 
+                <div
+                    class="feature-card bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100">
+                    <div class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mb-6"> <i
+                            class="fas fa-comments text-white text-2xl"></i> </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Seamless Communication</h3>
+                    <p class="text-gray-600"> Connect instantly with suppliers and buyers through our integrated
+                        messaging system. </p>
+                </div> <!-- Feature 4 -->
+                <div
+                    class="feature-card bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100 md:col-span-2 lg:col-span-3">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Smart Financial Tools <span
+                                    class="text-green-500">(Coming Soon)</span></h3>
+                            <p class="text-gray-600"> Track performance, plan your finances, and forecast growth — all
+                                digitally integrated. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-xl font-semibold text-gray-800 mt-12"> From discovery to partnership — Dokonchi
+                handles the entire process </p>
+        </div>
+    </section> <!-- ==================== VISION AND VALUES ==================== -->
+    <section class="section-padding bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center md:text-left">
+                    <div
+                        class="w-16 h-16 gradient-orange rounded-xl flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Vision</h3>
+                    <p class="text-gray-300"> To create a transparent, connected, and borderless ecosystem for
+                        business-to-business trade. </p>
+                </div>
+                <div class="text-center md:text-left">
+                    <div
+                        class="w-16 h-16 gradient-orange rounded-xl flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mission</h3>
+                    <p class="text-gray-300"> We simplify connections, empower entrepreneurs, and unlock growth for
+                        small and medium enterprises through digital trust. </p>
+                </div>
+                <div class="text-center md:text-left">
+                    <div
+                        class="w-16 h-16 gradient-orange rounded-xl flex items-center justify-center mb-6 mx-auto md:mx-0">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Principle</h3>
+                    <p class="text-gray-300"> At Dokonchi, we believe every business — big or small — deserves a fair
+                        and efficient path to growth. </p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4"> What Our Users Say </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 gradient-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            F </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Farrukh</h4>
+                            <p class="text-sm text-gray-600">Clothing Reseller</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic"> "Dokonchi helped us expand from Tashkent to Dubai — all through
+                        verified partners." </p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            A </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Aizhan</h4>
+                            <p class="text-sm text-gray-600">Distributor in Almaty</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic"> "Finally, a B2B platform that understands regional trade
+                        realities." </p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                            M </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Muhammad</h4>
+                            <p class="text-sm text-gray-600">Retailer in Abu Dhabi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic"> "I found reliable Chinese manufacturers within days. Fast, safe,
+                        and transparent." </p>
+                </div>
+            </div>
+            <p class="text-center text-xl font-semibold text-gray-800 mt-12"> Real people. Real partnerships. Real
+                results. </p>
+        </div>
+    </section> <!-- ==================== MANUFACTURERS GRID ==================== -->
+    <section id="manufacturers" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4"> Explore Our Network </h2>
+                <p class="text-xl text-gray-600"> Connect with verified manufacturers and resellers </p>
+            </div> <!-- Search Bar -->
+            <div class="max-w-3xl mx-auto mb-12">
+                <div class="flex gap-4 flex-col md:flex-row"> <select id="categorySelect"
+                        class="px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-orange-500 focus:outline-none">
+                        <option value="">All Categories</option>
+                        <option value="oziq-ovqat">🎯 Food & Beverage</option>
+                        <option value="kiyim">👕 Clothing</option>
+                        <option value="elektronika">📱 Electronics</option>
+                        <option value="uy-jihozlari">🏠 Home Goods</option>
+                        <option value="sport">⚽ Sports</option>
+                        <option value="qurulish">🔨 Construction</option>
+                    </select> <input type="text" id="searchInput" placeholder="Search manufacturers..."
+                        class="flex-1 px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-orange-500 focus:outline-none">
+                    <button onclick="searchManufacturers()"
+                        class="btn-primary text-white px-8 py-3 rounded-lg font-semibold"> <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="manufacturersGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Generated by JavaScript -->
+            </div>
+        </div>
+    </section> <!-- ==================== TEAM SECTION ==================== -->
+    <section id="team" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4"> Meet the Team Behind Dokonchi </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div
+                        class="w-32 h-32 gradient-orange rounded-full mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
+                        IT </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ibrohim Tolibboyev</h3>
+                    <p class="text-orange-500 font-semibold mb-3">Founder & CEO</p>
+                    <p class="text-gray-600 italic"> "Building bridges between business, technology, and trust." </p>
+                </div> <!-- Add more team members here -->
+            </div>
+        </div>
+    </section> <!-- ==================== CALL TO ACTION ==================== -->
+    <section id="join" class="section-padding gradient-orange text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6"> Grow Beyond Borders with Dokonchi </h2>
+            <p class="text-xl md:text-2xl mb-12 opacity-90"> Join thousands of entrepreneurs building smarter, faster,
+                and more connected businesses today. </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center"> <button
+                    class="bg-white text-orange-500 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    Join the Platform </button> <button
+                    class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-orange-500 transition-colors">
+                    Partner With Us </button> </div>
+        </div>
+    </section> <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-gradient-orange mb-4">Do'konchi</h3>
+                    <p class="text-gray-400 mb-4 max-w-md"> Connecting businesses across borders. Building trust,
+                        streamlining supply chains, and helping businesses grow. </p>
+                    <div class="flex space-x-4"> <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-telegram"></i> </a> <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-instagram"></i> </a> <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-linkedin"></i> </a> </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-orange-500 transition-colors">About Us</a></li>
+                        <li><a href="#features" class="hover:text-orange-500 transition-colors">Features</a></li>
+                        <li><a href="#manufacturers" class="hover:text-orange-500 transition-colors">Manufacturers</a>
+                        </li>
+                        <li><a href="#team" class="hover:text-orange-500 transition-colors">Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i><a href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="1970777f76597d767276777a7170377a7674">[email&#160;protected]</a></li>
+                        <li><i class="fas fa-phone mr-2"></i>+998 90 123 45 67</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Tashkent, Uzbekistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dokonchi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> <!-- Include JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9922c35ebb6f2d82',t:'MTc2MTA3MDc2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
